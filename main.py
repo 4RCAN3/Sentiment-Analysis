@@ -1,14 +1,8 @@
 # import required librareis
-from matplotlib.pyplot import plot
-
-
 try:
     import tweepy
-    import datetime
     from dotenv import load_dotenv
     import os
-    from nrclex import NRCLex
-    import matplotlib
     from nltk.sentiment import SentimentIntensityAnalyzer
     import matplotlib.pyplot as plt
     import sys
@@ -61,11 +55,11 @@ class Twitter():
         self.plot(toPlot)
         return toPlot
 
-    def fetchTop(self, keyword, num, language='en'):
+    def fetchPopular(self, keyword, num, language='en'):
         api = self.api
 
         tweets = tweepy.Cursor(api.search, q=keyword,
-                               lang=language, tweet_mode='extended').items(num)
+                               lang=language, tweet_mode='extended', result_type='popular').items(num)
 
         toPlot = {}
         for tweet in tweets:
@@ -80,7 +74,8 @@ class Twitter():
 
         x_axis = []
         y_axis = []
-        for x in toPlot.keys():
+
+        for x in sorted(toPlot.keys()):
             x_axis.append(x)
             y_axis.append(toPlot[x])
 
@@ -95,5 +90,8 @@ class Twitter():
 
 
 twitter = Twitter()
+
+# Plot historical graph for keyword Minima Global
 twitter.historical('Minima Global', '2021-10-01')
-twitter.fetchTop('Minima Global', 20)
+# Plot Top tweets graph for keyword iPhone 13
+twitter.fetchPopular('iPhone 13', 20)
