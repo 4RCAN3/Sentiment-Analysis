@@ -10,15 +10,19 @@
       <li>Your Social Comments Analysis...</li>
     </ul>
     <form class="add-items">
+      <div class="form1">
       <input type="text" name="Name" placeholder="Your Name" required>
-      <input type="submit" value="Save">
-    
-    <input  type="text" name="keyWords" placeholder="Popular Tweets " required>
-      <input class="popularTweets" type="submit" value="Search">
+      
+      <input type="text" name="keyWords1" placeholder="Input 2 " required>
+      <input type="text" name="keyWords1" placeholder="Input 3 " required>
+      </div>
 
-    <input type="text" name="keyWords1" placeholder="Historical Tweets " required>
-      <input class="historicalTweets" type="submit" value="Search">
+      <input class="button1" type="submit" value="Save">
+      <input class="button popularTweets" type="submit" value="Popular Tweets">
+      <input class="button historicalTweets" type="submit" value="Historical Tweets">
+      
     </form>
+
     <section>
      <%- include("partials/footer") %>
     </section>
