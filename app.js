@@ -31,11 +31,40 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/someDB", { useNewUrlParser: true });
+const MONGODB_URI = "mongodb+srv://AyushKatoch:ayush2002@cluster0.nj2xk.mongodb.net/shop?retryWrites=true&w=majority";
+
+mongoose.connect(MONGODB_URI , { useNewUrlParser: true });
+
+const realDataSchema = new mongoose.Schema({
+  name: String,
+  historicalData : String,
+  historicalDataDate: Date,
+  popularTweet: String,
+  popularTweetNum: Number
+});
+
+const StatModel = new mongoose.model("StatModel", realDataSchema);
 
 app.get("/", (req, res) => {
   
     res.render("sentiment", {currentDay : currentDay })
+})
+
+app.post("/", (req, res, next) => {
+  const statModel = new StatModel({
+  name: req.body.realTimeData,
+  historicalData : req.body.historicalData,
+  historicalDataDate: req.body.historicalDataDate,
+  popularTweet: req.body.popularTweet,
+  popularTweetNum: req.body.popularTweetNum
+
+})
+  statModel.save().then(result => {
+    console.log(result);
+  }).catch(err => {
+    console.log(err);
+  })
+  res.redirect("/");
 })
 
 app.listen(5000, () => {
