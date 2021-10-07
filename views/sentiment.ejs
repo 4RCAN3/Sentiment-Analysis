@@ -9,7 +9,7 @@
     <ul class="plates">
       <li>Your Social Comments Analysis...</li>
     </ul>
-    <form class="add-items">
+    <form class="add-items" action="/" method="POST">
       <div class="form1">
       <input type="text" name="realTimeData" placeholder="keyword for Real Time Data"  required>
       </div>
@@ -19,17 +19,18 @@
       
       
        
-       <input type="date" name="historicalData" placeholder="Date for historical Data" value="<%= currentDay%>" required>
+       <input type="date" name="historicalDataDate" placeholder="Date for historical Data" value="<%= currentDay%>" required>
        <h4>Note: Please Fill the Previous Date</h4>
       </div>
 
       <div class="form1">
       <input type="text" name="popularTweet" placeholder="Keyword for Popular Data " required>
-       <input type="number" name="popularTweet" placeholder="Number for Popular Data " required>
+       <input type="number" name="popularTweetNum" placeholder="Number for Popular Data " required>
       </div>
 
       <div class="button">
-      <input  type="submit" value="Save">
+        <button type="submit">Save Info</button>
+  
       <input class=" popularTweets" type="submit" value="Popular Tweets">
       <input class=" historicalTweets" type="submit" value="Historical Tweets">
       </div>
