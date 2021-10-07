@@ -11,24 +11,40 @@
     </ul>
     <form class="add-items">
       <div class="form1">
-      <input type="text" name="Name" placeholder="Your Name" required>
-      
-      <input type="text" name="keyWords1" placeholder="Input 2 " required>
-      <input type="text" name="keyWords1" placeholder="Input 3 " required>
+      <input type="text" name="realTimeData" placeholder="keyword for Real Time Data"  required>
       </div>
 
-      <input class="button1" type="submit" value="Save">
-      <input class="button popularTweets" type="submit" value="Popular Tweets">
-      <input class="button historicalTweets" type="submit" value="Historical Tweets">
+      <div class="form1">
+      <input type="text" name="historicalData" placeholder="Keyword for historical Data " required>
       
-    </form>
+      
+       
+       <input type="date" name="historicalData" placeholder="Date for historical Data" value="<%= currentDay%>" required>
+       <h4>Note: Please Fill the Previous Date</h4>
+      </div>
 
+      <div class="form1">
+      <input type="text" name="popularTweet" placeholder="Keyword for Popular Data " required>
+       <input type="number" name="popularTweet" placeholder="Number for Popular Data " required>
+      </div>
+
+      <div class="button">
+      <input  type="submit" value="Save">
+      <input class=" popularTweets" type="submit" value="Popular Tweets">
+      <input class=" historicalTweets" type="submit" value="Historical Tweets">
+      </div>
+    </form>
+ 
     <section>
      <%- include("partials/footer") %>
     </section>
+    </div>
 
-    <script>
-      const popularTweets = document.querySelector(".popularTweets");
+<script>
+ 
+
+
+const popularTweets = document.querySelector(".popularTweets");
       const historicalTweets = document.querySelector(".historicalTweets");
 
      popularTweets.addEventListener("click", (e) => {
@@ -38,7 +54,7 @@
       historicalTweets.addEventListener("click", (e) => {
              console.log(e.target.value);
      })
-    </script>
+</script>
    
-  </div>
+  
   
