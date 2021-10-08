@@ -1,11 +1,11 @@
 # Sentiment-Analysis
 Live the code Hackathon
 
-<h1 align="center">Tweetle</h1>
+<h1 align="center">Sentiment Analysis</h1>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/69053040/114283099-b0971d80-9a65-11eb-86b9-828b91979a82.png" alt = "Tweetle"/>
 </p>
-<p align="center"><i>A python based CLI to control your twitter account and get analytical data</i></p>
+<p align="center"><i>To get Real Time Data from our Social comments from twitter which can easily recognise our emotions like angry, happy, sad etc comments together</i></p>
 <p align="center">
   <a href="https://github.com/4RCAN3/Tweetle/stargazers"><img src="https://img.shields.io/github/stars/4RCAN3/Tweetle" alt="Stars Badge"/></a>
 <a href="https://github.com/4RCAN3/Tweetle/network/members"><img src="https://img.shields.io/github/forks/4RCAN3/Tweetle" alt="Forks Badge"/></a>
@@ -19,21 +19,24 @@ Live the code Hackathon
 <p align="center"><img src="https://media.discordapp.net/attachments/791081474425749577/830174345657450516/ezgif-7-0ab7a69f2594.gif" alt="Tweetle Gif"></p>
 
 
-## Installation
+## Installation of Project dependencies
 
-### Through pip
+### Through npm
 #### For windows:
-- `pip install tweetle`
+- `npm init`
 
-#### For linux/macos:
-- `pip3 install tweetle`
+
+
 <br>
 
-### Manual Installation
-- `git clone https://github.com/4RCAN3/Tweetle/`
+### Manual Installation for Python 
+- `git clone https://github.com/4RCAN3/Sentiment-Analysis/`
 - `setup.bat`
 - `venv\scripts\activate`
 - `tweetle`
+
+### Manual Installation for Node.js
+- `npm i --save express body-parser ejs mongoose passport express-session moment`
 
 
 ## Commands:
