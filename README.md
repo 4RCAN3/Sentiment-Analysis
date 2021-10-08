@@ -5,7 +5,7 @@ Live the code Hackathon
 <p align="center">
   <img src="https://user-images.githubusercontent.com/69053040/114283099-b0971d80-9a65-11eb-86b9-828b91979a82.png" alt = "Tweetle"/>
 </p>
-<p align="center"><i>To get Real Time Data from our Social comments from twitter which can easily recognise our emotions like angry, happy, sad etc comments together</i></p>
+<p align="center"><i>To get Real Time Data from our Social comments from twitter which can easily recognise our emotions like angry, happy, sad etc and plot a graph showing popular tweets and historical tweets related our entered keyword for a specific amount of time</i></p>
 <p align="center">
   <a href="https://github.com/4RCAN3/Tweetle/stargazers"><img src="https://img.shields.io/github/stars/4RCAN3/Tweetle" alt="Stars Badge"/></a>
 <a href="https://github.com/4RCAN3/Tweetle/network/members"><img src="https://img.shields.io/github/forks/4RCAN3/Tweetle" alt="Forks Badge"/></a>
