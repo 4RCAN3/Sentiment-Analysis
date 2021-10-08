@@ -40,7 +40,7 @@ Sentysis has a wide field of improvement
 
 
 ## Screenshots
-<img src="https://media.discordapp.net/attachments/653164594721718273/896067613917081651/e3b031b3-54f0-42b6-a419-59a175586032.png" alt = "Sentysis"/>
+<img src="https://media.discordapp.net/attachments/653164594721718273/896068001764352000/536a79d3-cf7a-46e9-b0b4-db688ea4a6df.png" alt = "Sentysis"/>
 <img src="https://media.discordapp.net/attachments/653164594721718273/896067859841691679/758d6460-6981-43f7-bdd6-85cb1aa817ae.png" alt = "Sentysis"/>
 
 ## Languages used
