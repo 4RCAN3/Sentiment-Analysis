@@ -38,6 +38,9 @@ Live the code Hackathon
 ### Manual Installation for Node.js
 - `npm i --save express body-parser ejs mongoose passport express-session moment`
 
+### Running up the server
+ - `node app.js`
+
 
 ## Commands:
 <p align="center"><img src="https://user-images.githubusercontent.com/69053040/114283653-70856a00-9a68-11eb-8737-137efbcd3a3e.png" alt = "commands">
