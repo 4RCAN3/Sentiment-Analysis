@@ -39,7 +39,9 @@ Sentysis has a wide field of improvement
 - Ability for users to generate their own API keys for higher efficiency
 
 
-
+## Screenshots
+<img src="https://media.discordapp.net/attachments/653164594721718273/896067613917081651/e3b031b3-54f0-42b6-a419-59a175586032.png" alt = "Sentysis"/>
+<img src="https://media.discordapp.net/attachments/653164594721718273/896067859841691679/758d6460-6981-43f7-bdd6-85cb1aa817ae.png" alt = "Sentysis"/>
 
 ## Languages used
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
