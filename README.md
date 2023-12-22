@@ -18,11 +18,11 @@
 
  ## Why Sentysis?
 - It can collect real time data and analyse them in real time.
-- It focuses on social media websites, which are the hubs of expressing public opinions
+- It focuses on social media websites, which are the hubs of expressing public opinions.
 - It provides the options of analysing real time data, historical data, or popular data
-- Lots of customization options
-- Highly useful in analysing brand health and public opinion
-- Highly useful tool for data scientists
+- Lots of customization options.
+- Highly useful in analysing brand health and public opinion.
+- Highly useful tool for data scientists.
 <br>
 
 ## Limitations of Sentysis
